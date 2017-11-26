@@ -14,7 +14,7 @@ import System.FilePath ((</>))
 
 
 
--- PACKGE NAMES
+-- PACKAGE NAMES
 
 
 data Name = Name
@@ -166,7 +166,7 @@ data Version = Version
     , _minor :: Int
     , _patch :: Int
     }
-    deriving (Eq, Ord)
+    deriving (Eq, Ord, Show)
 
 
 initialVersion :: Version
