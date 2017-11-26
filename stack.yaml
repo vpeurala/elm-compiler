@@ -1,2 +1,10 @@
-resolver: lts-6.35
-
+resolver: lts-9.14
+ghc-options:
+  "*": -prof -fprof-auto -fprof-cafs
+apply-ghc-options: locals
+packages:
+- .
+extra-deps:
+- aeson-pretty-0.7.2
+- binary-0.7.6.1
+- integer-gmp-1.0.0.1
